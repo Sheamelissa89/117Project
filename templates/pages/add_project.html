@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Add Project{% endblock title %}
+
+{% block content %}
+
+<section>
+    <h1>Add Project</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">Add Project</button>
+    </form>
+
+    <p>
+        <a href="{% url 'projects' %}">Back to Projects</a>
+    </p>
+</section>
+
+{% endblock content %}

@@ -1,0 +1,268 @@
+   /* =========================================
+   CONTENT SECTIONS
+   Project 117 FullStack Portfolio
+   ========================================= */
+
+
+/* ---------- General Sections ---------- */
+
+section {
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+section > h1 {
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+
+    border-bottom: 2px solid var(--gold);
+}
+
+
+/* ---------- Experience ---------- */
+
+.experience-section > p {
+    max-width: 850px;
+    margin-bottom: 2rem;
+
+    color: var(--text-muted);
+    font-size: 1.05rem;
+}
+
+
+.experience-card {
+    margin-bottom: 1.5rem;
+    padding: 1.75rem;
+
+    background-color: var(--white);
+
+    border: 1px solid var(--border-light);
+    border-left: 4px solid var(--gold);
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+
+.experience-card h2 {
+    margin-bottom: 0.25rem;
+}
+
+
+.experience-card h3 {
+    color: var(--gold);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.experience-card h4 {
+    margin-top: 1.25rem;
+}
+
+
+.experience-card ul {
+    columns: 2;
+    column-gap: 2rem;
+}
+
+
+/* ---------- Projects ---------- */
+
+.project {
+    margin-bottom: 1.5rem;
+    padding: 1.75rem;
+
+    background-color: var(--white);
+
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.project:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.project h2 {
+    margin-bottom: 0.75rem;
+}
+
+
+.project h3 {
+    margin-top: 1.25rem;
+
+    color: var(--gold);
+}
+
+
+.project ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 0.5rem;
+
+    margin-left: 0;
+
+    list-style: none;
+}
+
+
+.project li {
+    padding: 0.3rem 0.7rem;
+
+    background-color: var(--cream);
+    color: var(--navy);
+
+    border: 1px solid var(--border-light);
+    border-radius: 20px;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+.project > a {
+    display: inline-block;
+
+    margin-top: 0.75rem;
+
+    color: var(--gold);
+    font-weight: 600;
+}
+
+
+.project > a:hover {
+    color: var(--navy);
+}
+
+
+/* ---------- Contact ---------- */
+
+.contact-section {
+    max-width: 850px;
+}
+
+
+.contact-section > p {
+    font-size: 1.05rem;
+}
+
+
+.contact-section h2 {
+    margin-top: 2rem;
+}
+
+
+.contact-links {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+
+    background-color: var(--white);
+
+    border: 1px solid var(--border-light);
+    border-left: 4px solid var(--gold);
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+
+.contact-links p:last-child {
+    margin-bottom: 0;
+}
+
+
+.contact-links a {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+
+.contact-links a:hover {
+    color: var(--navy);
+}
+
+
+/* ---------- Forms ---------- */
+
+form {
+    max-width: 700px;
+
+    padding: 2rem;
+
+    background-color: var(--white);
+
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+
+form p {
+    margin-bottom: 1.25rem;
+}
+
+
+form label {
+    display: block;
+
+    margin-bottom: 0.4rem;
+
+    color: var(--navy);
+
+    font-weight: 600;
+}
+
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+
+    padding: 0.7rem;
+
+    background-color: var(--white);
+    color: var(--text-dark);
+
+    border: 1px solid var(--border-light);
+    border-radius: 5px;
+
+    font: inherit;
+}
+
+
+form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+
+form select[multiple] {
+    min-height: 150px;
+}
+
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: 2px solid var(--gold-light);
+    border-color: var(--gold);
+}
+
+
+/* ---------- About Page ---------- */
+
+main section p {
+    max-width: 900px;
+}

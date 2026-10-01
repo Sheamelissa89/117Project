@@ -1,0 +1,164 @@
+/* =========================================
+   RESPONSIVE DESIGN
+   Project 117 FullStack Portfolio
+   ========================================= */
+
+
+/* ---------- Tablets ---------- */
+
+@media (max-width: 768px) {
+
+    main {
+        width: 94%;
+        padding: 2rem 1rem;
+    }
+
+
+    /* Typography */
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+
+    /* Navigation */
+
+    header .nav-link,
+    footer .nav-link {
+        gap: 1.25rem;
+    }
+
+
+    header .nav-link a,
+    footer .nav-link a {
+        font-size: 0.95rem;
+    }
+
+
+    /* Experience */
+
+    .experience-card {
+        padding: 1.4rem;
+    }
+
+    .experience-card ul {
+        columns: 1;
+    }
+
+
+    /* Projects */
+
+    .project {
+        padding: 1.4rem;
+    }
+
+
+    /* Forms */
+
+    form {
+        padding: 1.5rem;
+    }
+}
+
+
+/* ---------- Phones ---------- */
+
+@media (max-width: 480px) {
+
+    main {
+        width: 100%;
+        padding: 1.5rem 1rem;
+    }
+
+
+    /* Typography */
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+
+    /* Header */
+
+    header {
+        padding: 1rem;
+    }
+
+    header .nav-link {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    header .nav-link a {
+        width: 100%;
+
+        padding: 0.4rem;
+
+        text-align: center;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding: 1.25rem 1rem;
+    }
+
+    footer .nav-link {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+
+    /* Cards */
+
+    .experience-card,
+    .project,
+    .contact-links {
+        padding: 1.15rem;
+    }
+
+
+    /* Project Skills */
+
+    .project ul {
+        gap: 0.4rem;
+    }
+
+    .project li {
+        font-size: 0.82rem;
+    }
+
+
+    /* Forms */
+
+    form {
+        padding: 1.15rem;
+    }
+
+    button,
+    .button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* Long URLs */
+
+    .contact-links a {
+        overflow-wrap: anywhere;
+    }
+}

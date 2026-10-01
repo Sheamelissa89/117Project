@@ -1,0 +1,87 @@
+/* =========================================
+   HEADER
+   Project 117 FullStack Portfolio
+   ========================================= */
+
+
+/* ---------- Header ---------- */
+
+header {
+    width: 100%;
+    padding: 1.25rem 1rem;
+
+    background-color: var(--navy);
+
+    border-bottom: 3px solid var(--gold);
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ---------- Navigation ---------- */
+
+header nav {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+header .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+
+/* ---------- Navigation Links ---------- */
+
+header .nav-link a {
+    position: relative;
+
+    padding: 0.5rem 0;
+
+    color: var(--white);
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    letter-spacing: 0.03rem;
+
+    transition: color 0.2s ease;
+}
+
+
+header .nav-link a:hover {
+    color: var(--gold-light);
+}
+
+
+/* ---------- Animated Underline ---------- */
+
+header .nav-link a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background-color: var(--gold);
+
+    transform: translateX(-50%);
+
+    transition: width 0.2s ease;
+}
+
+
+header .nav-link a:hover::after {
+    width: 100%;
+}

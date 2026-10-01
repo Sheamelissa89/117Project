@@ -1,0 +1,73 @@
+/* =========================================
+   FOOTER
+   Project 117 FullStack Portfolio
+   ========================================= */
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    padding: 1.5rem 1rem;
+
+    background-color: var(--navy);
+    border-top: 3px solid var(--gold);
+}
+
+
+/* ---------- Footer Navigation ---------- */
+
+.nac-footer {
+    width: 100%;
+}
+
+footer .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+/* ---------- Footer Links ---------- */
+
+footer .nav-link a {
+    color: var(--white);
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    padding: 0.4rem 0;
+
+    position: relative;
+}
+
+
+/* Gold underline effect */
+
+footer .nav-link a::after {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background-color: var(--gold);
+
+    transform: translateX(-50%);
+
+    transition: width 0.2s ease;
+}
+
+
+footer .nav-link a:hover {
+    color: var(--gold-light);
+}
+
+
+footer .nav-link a:hover::after {
+    width: 100%;
+}

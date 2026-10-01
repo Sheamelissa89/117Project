@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static 'css/section.css' %}">
+
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+
+<body>
+
+    <header class="center">
+        <nav>
+            <div class="nav-link center">
+                <a href="{% url 'about_me' %}">About Me</a>
+                <a href="{% url 'experience' %}">Experience</a>
+                <a href="{% url 'projects' %}">Projects</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+
+    <footer>
+        <nav class="nac-footer center">
+            <div class="nav-link center">
+                <a href="{% url 'about_me' %}">About Me</a>
+                <a href="{% url 'experience' %}">Experience</a>
+                <a href="{% url 'projects' %}">Projects</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+</html>
