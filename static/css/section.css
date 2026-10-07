@@ -261,29 +261,125 @@ form select:focus {
 }
 
 
-/* ---------- About Page ---------- */
+/* ---------- About Me ---------- */
 
-main section p {
+.about-section {
+    max-width: 950px;
+}
+
+.about-section .about-eyebrow {
+    margin-bottom: 0.75rem;
+    color: var(--navy);
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.about-section > h1 {
     max-width: 900px;
-}
-.contact-form .form-actions {
-    display: flex;
-    align-items: center;
-    gap: 24px;
+    margin-top: 0;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
 }
 
-.contact-form a.cancel-button {
-    display: inline-block;
-    padding: 14px 22px;
-    background-color: #192640;
-    color: #fff;
-    border: 1px solid #192640;
+.about-section .about-lead {
+    max-width: 850px;
+    margin-bottom: 1.5rem;
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+    line-height: 1.7;
+}
+
+.about-section > p {
+    max-width: 850px;
+    margin-bottom: 1.25rem;
+    line-height: 1.8;
+}
+
+.about-section > h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--navy);
+    font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+    line-height: 1.35;
+}
+
+.about-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.75rem 0 2.5rem;
+}
+
+.about-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.85rem 1.4rem;
+    background-color: var(--navy);
+    color: var(--white);
+    border: 2px solid var(--navy);
     border-radius: 6px;
     text-decoration: none;
-    font: inherit;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.about-button:visited {
+    color: var(--white);
+}
+
+.about-button-secondary,
+.about-button-secondary:visited {
+    background-color: transparent;
+    color: var(--navy);
+}
+
+.about-button:hover {
+    background-color: var(--cream);
+    color: var(--navy);
+}
+
+.about-button-secondary:hover {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.about-button:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .about-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+/* Experience details */
+
+.experience-section .experience-card ul {
+    columns: 1;
+    padding-left: 1.25rem;
+}
+
+.experience-card li {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+}
+
+.experience-card .experience-date {
+    margin: 0.5rem 0 1.25rem;
+    color: var(--text-muted);
+    font-size: 0.95rem;
     font-weight: 600;
 }
 
-.contact-form a.cancel-button:hover {
-    background-color: #263c63;
+.experience-card > a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--navy);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }

@@ -1,14 +1,67 @@
 {% extends 'base.html' %}
 
-{% block title %}About Me{% endblock title %}
+{% block title %}Shea Mullin | Full Stack Developer{% endblock title %}
 
 {% block content %}
 
-<h1>About Me</h1>
+<section class="about-section">
+    <p class="about-eyebrow">Shea Mullin · Full Stack Developer</p>
 
-<p>
-    Hi, I'm Shea. I'm a Full Stack Development student with experience
-    building web applications using Python, Django, HTML, CSS, and JavaScript.
-</p>
+    <h1>Thoughtful development. Practical solutions.</h1>
+
+    <p class="about-lead">
+        I build web applications that help people organize information,
+        navigate challenges, and turn ideas into something useful.
+        My work combines full-stack development with experience in
+        healthcare, behavioral support, and self-represented legal advocacy.
+    </p>
+
+    <div class="about-actions">
+        <a href="{% url 'projects' %}" class="about-button">
+            Explore My Projects
+        </a>
+        <a href="{% url 'contact' %}"
+           class="about-button about-button-secondary">
+            Let's Connect
+        </a>
+    </div>
+
+    <h2>A technical mindset with a human perspective</h2>
+
+    <p>
+        Before moving into software development, I monitored physiological
+        signals during sleep studies and supported children with disabilities
+        in building everyday skills and independence. These roles taught me
+        to observe carefully, document accurately, and adapt my approach
+        to the person and problem in front of me.
+    </p>
+
+    <p>
+        Representing myself in a workers' compensation matter strengthened
+        my research, organization, and negotiation skills. It also deepened
+        my interest in building tools that make complex information easier
+        to understand and manage.
+    </p>
+
+    <h2>What I bring to development</h2>
+
+    <p>
+        I work with Python, Django, Flask, JavaScript, React, HTML, CSS,
+        and SQLite. My projects span tenant-focused case management,
+        a fantasy adventure application, and an independently published
+        website. I enjoy the entire process: understanding a need,
+        designing an experience, building the functionality, and
+        troubleshooting until the pieces work together.
+    </p>
+
+    <p>
+        Since April 2026, I have been developing these skills through the
+        Full Stack Development Immersive program at San Diego Global
+        Knowledge University and through independent projects.
+        I am seeking opportunities where I can contribute practical
+        problem-solving, careful documentation, and a willingness
+        to keep learning.
+    </p>
+</section>
 
 {% endblock content %}
