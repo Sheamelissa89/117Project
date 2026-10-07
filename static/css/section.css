@@ -266,3 +266,24 @@ form select:focus {
 main section p {
     max-width: 900px;
 }
+.contact-form .form-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.contact-form a.cancel-button {
+    display: inline-block;
+    padding: 14px 22px;
+    background-color: #192640;
+    color: #fff;
+    border: 1px solid #192640;
+    border-radius: 6px;
+    text-decoration: none;
+    font: inherit;
+    font-weight: 600;
+}
+
+.contact-form a.cancel-button:hover {
+    background-color: #263c63;
+}

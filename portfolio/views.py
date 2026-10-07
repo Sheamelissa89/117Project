@@ -20,6 +20,7 @@ def send_email(form):
     message = form.cleaned_data["message"]
 
     body = (
+        f"Message from your portfolio contact form:\n\n"
         f"Name: {name}\n"
         f"Email: {email}\n\n"
         f"Message:\n{message}"
