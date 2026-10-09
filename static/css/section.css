@@ -383,3 +383,148 @@ form select:focus {
     text-decoration: underline;
     text-underline-offset: 3px;
 }
+/* ---------- About Me Photo Layout ---------- */
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    align-items: start;
+    gap: 40px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    box-sizing: border-box;
+}
+
+.about-photo .profile-photo {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    margin: 0;
+    border-radius: 16px;
+}
+
+.about-layout .about-section {
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 700px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 24px 16px;
+    }
+
+    .about-photo {
+        width: 200px;
+        margin: 0 auto;
+    }
+}
+.about-section > p {
+    font-size: 1.05rem;
+}
+
+.about-section .about-lead {
+    font-size: clamp(1.1rem, 2vw, 1.3rem);
+}
+/* Larger photo that follows the text while scrolling */
+@media (min-width: 701px) {
+    .about-layout {
+        grid-template-columns: 300px minmax(0, 1fr);
+    }
+
+    .about-photo {
+        position: sticky;
+        top: 100px;
+        align-self: start;
+    }
+
+    .about-photo .profile-photo {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+@media (min-width: 701px) {
+    .about-layout {
+        grid-template-columns: 340px minmax(0, 1fr);
+    }
+
+    .about-photo {
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 100px;
+        align-self: start;
+    }
+
+    .about-photo .profile-photo {
+        width: 300px;
+        max-width: 100%;
+        height: 450px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 16px;
+    }
+}
+@media (min-width: 1000px) {
+    .about-layout {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: min(1400px, calc(100vw - 64px));
+        max-width: none;
+        margin: 0;
+        padding: 40px 0;
+
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 60px;
+    }
+
+    .about-photo {
+        display: flex;
+        justify-content: center;
+        align-self: start;
+        position: sticky;
+        top: 100px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .about-photo .profile-photo {
+        width: 440px;
+        max-width: 100%;
+        height: 660px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px;
+    }
+}
+.about-layout .about-section > p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.about-layout .about-section .about-lead {
+    font-size: 1.35rem;
+}
+
+.about-layout .about-section .about-eyebrow {
+    font-size: 1.1rem;
+}
+
+.about-layout .about-section > h2 {
+    font-size: 1.9rem;
+}
+@media (min-width: 1000px) {
+    .about-layout {
+        grid-template-columns: minmax(0, 3fr) minmax(0, 7fr);
+        gap: 40px;
+    }
+}
